@@ -1,0 +1,24 @@
+SABANCI MTAL - PWA PAKETİ
+=========================
+Dosyalar: index.html, manifest.json, sw.js, icons/ klasörü
+
+KURULUM
+1) Tüm dosyaları ve icons klasörünü AYNI klasöre, olduğu gibi yükleyin.
+2) Sitenin HTTPS ile açılması şarttır (localhost hariç). Ücretsiz seçenekler:
+   GitHub Pages, Netlify (sürükle-bırak), Cloudflare Pages.
+3) Telefonda adresi açın:
+   - Android / Chrome: Menü > "Uygulamayı yükle"
+   - iPhone / Safari: Paylaş > "Ana Ekrana Ekle"
+
+YEREL TEST
+Klasörde:  python3 -m http.server 8000
+Sonra tarayıcıda http://localhost:8000 açın.
+(Dosyaya çift tıklayıp açmak service worker'ı çalıştırmaz.)
+
+GÜNCELLEME
+index.html değiştirdiğinizde sw.js içindeki CACHE adını (v1 -> v2) artırın;
+kullanıcılar yeni sürümü bir sonraki açılışta alır.
+
+NOT
+- Haber ve duyurular index.html içine gömülüdür, kendiliğinden güncellenmez.
+- Dış bağlantılar (e-Okul, EBA vb.) internet gerektirir; uygulama kabuğu çevrimdışı açılır.

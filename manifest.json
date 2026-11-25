@@ -1,0 +1,34 @@
+{
+  "name": "Sabancı Mesleki ve Teknik Anadolu Lisesi",
+  "short_name": "Sabancı MTAL",
+  "description": "Kocaeli / İzmit Sabancı MTAL haberler, duyurular ve hızlı bağlantılar",
+  "lang": "tr",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#c8102e",
+  "theme_color": "#c8102e",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
